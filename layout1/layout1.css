@@ -1,0 +1,50 @@
+div{
+	padding:20px;
+	border:1px solid #ccc;
+}
+#top_ad{
+  margin-bottom: 10px;
+}
+#bottom_ad{
+  margin-top: 10px;
+}
+.ad_container{
+  margin: 0 auto;
+  padding: 20px;
+  width: 960px;
+  height: 50px;
+  background: #ffebcc;
+  color: grey;
+}
+.container{
+  margin: 0 auto;
+  padding: 20px;
+  width: 960px;
+}
+.header{
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.left_sidebar{
+  width: 120px;
+  margin-right: 20px;
+  float: left;
+  margin-bottom: 20px;
+}
+.content{
+  width: 550px;
+  float: left;
+  margin-bottom: 20px;
+}
+.right_sidebar{
+  width: 120px;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.footer{
+  clear: both;
+}
+h1, h2, h3{
+    text-align: center;
+}
