@@ -23,7 +23,7 @@
 .content a:hover{
   color: red;
 }
-.basic_layouts{
+.type{
   border: 1px dotted black;
   width: 300px;
   margin: 20px auto;
