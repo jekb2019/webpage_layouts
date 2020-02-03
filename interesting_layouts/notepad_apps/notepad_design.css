@@ -44,15 +44,14 @@
   margin-left: 27px;
 
   word-wrap: break-word;
-  background-color: #F0F0F0;
-  transition: transform 0.3s ease-out
-
+  transition: transform 0.3s ease-out;
 }
 .subject_box:hover{
   transform: scale(1.2);
+  background-color: #F0F0F0;
 }
 .subject_box:active{
-  border: 1px solid red;
+  border: 1px solid black;
 }
 .subject_box h2{
   font-size: 1em;
