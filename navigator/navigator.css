@@ -17,6 +17,12 @@
   border-radius: 10px;
   text-align: center;
 }
+#info a{
+  color:black;
+}
+#info a:hover{
+  color:red;
+}
 .content a{
   color: blue;
 }
