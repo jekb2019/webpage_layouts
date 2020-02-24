@@ -7,24 +7,7 @@
     <script src="js/jquery-2.2.4.min.js"></script>
     <link rel="stylesheet" media="screen" href="trigger_menu.css">
     <link rel="stylesheet" media="screen and (min-width:768px)" href="trigger_menu_721plus.css">
-    <script>
-      $(function(){
-
-			var trigger = $('#trigger');
-			var menu = $('nav ul');
-			$(trigger).on("click",function(e){
-				e.preventDefault();
-				menu.slideToggle();
-			})
-
-			$(window).resize(function(){
-				var w=$(window).width();
-				if(w>320&&menu.is(':hidden')){
-					menu.removeAttr('style');
-				}
-			});
-		});
-    </script>
+    <script src="js/trigger_menu.js"></script>
   </head>
   <body>
     <nav>
