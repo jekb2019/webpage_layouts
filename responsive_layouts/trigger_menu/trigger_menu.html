@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Responsive Trigger Menu</title>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" media="screen" href="trigger_menu.css">
+    <link rel="stylesheet" media="screen and (min-width:721px)" href="trigger_menu_721plus.css">
+    <script>
+      $(function(){
+
+			var trigger = $('#trigger');
+			var menu = $('nav ul');
+			$(trigger).on("click",function(e){
+				e.preventDefault();
+				menu.slideToggle();
+			})
+
+			$(window).resize(function(){
+				var w=$(window).width();
+				if(w>320&&menu.is(':hidden')){
+					menu.removeAttr('style');
+				}
+			});
+		});
+    </script>
+  </head>
+  <body>
+    <nav>
+  		<ul>
+  			<li><a href="#">Menu1</a></li>
+  			<li><a href="#">Menu2</a></li>
+  			<li><a href="#">Menu3</a></li>
+  			<li><a href="#">Menu4</a></li>
+  			<li><a href="#">Menu5</a></li>
+  			<li><a href="#">Menu6</a></li>
+  		</ul>
+  		<a href="#" id="trigger">MENU</a>
+  	</nav>
+
+    <h1>Change the size of window (width less than 721px) and see the responsive design</h1>
+  </body>
+</html>

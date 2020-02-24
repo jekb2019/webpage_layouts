@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body{
+  background: url('milky_way.jpg') no-repeat right bottom fixed;
+  background-size: cover;
+}
+a:link, a:hover, a:visited{
+  color:#fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #283744;
+}
+nav{
+  width: 100%;
+  height: auto;
+  background:black ;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: relative;
+}
+nav ul{
+  display: none;
+  height: auto;
+}
+nav ul li{
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+nav ul li a{
+  line-height: 50px;
+}
+nav a#trigger{
+  display: block;
+  background-color: #283744;
+  width: 100%;
+  padding-left: 15px;
+  line-height: 40px;
+  position: relative;
+}
+nav a#trigger::after{
+  content:"";
+  background:url('nav.png') no-repeat;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+h1{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 100px;
+}
